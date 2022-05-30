@@ -1,0 +1,45 @@
+﻿@model CustomModules.Models.Athlete
+
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/HomePage/_HomePageLayout.cshtml";
+}
+
+<div class="parent-container">
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" asp-area="" asp-controller="HomePage" asp-action="Index">AdvancedTopics Practice</a>                
+        </div>
+    </nav>
+</div>
+
+<div class="tab-view-container">
+    <div class="navbar-section">
+        <ul class="nav text-uppercase nav-items-list">
+            <li class="nav-item" id="delegate">
+                <a class="nav-link active" data-aria-current="1" href="#delegateTab">Delegates</a>
+            </li>
+            <li class="nav-item" id="reflection">
+                <a class="nav-link" data-aria-current="2" href="#reflectionTab">Reflection</a>
+            </li>
+        </ul>
+    </div>
+    <br/>
+
+    <div class="tab-section">
+        <div id="delegateTab" class="tab" data-tabid="1">
+            @Html.Partial("_DelegatesEvents.cshtml", Model)
+        </div>
+
+        <div id="reflectionTab" class="tab hidden" data-tabid="2"></div>
+    </div>
+
+</div>  
+<br/> <br/>
+
+<footer class="border-top footer text-muted">
+    <center class="footer-text">
+        &copy; 2022 - A. N. Tanvir - Advanced Topics | Practice | Assignment
+    </center>
+</footer>
+

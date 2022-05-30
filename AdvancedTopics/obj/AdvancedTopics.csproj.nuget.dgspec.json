@@ -1,0 +1,132 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\ENOSIS WORKSPACE\\AdvancedTopics\\AdvancedTopics\\AdvancedTopics.csproj": {}
+  },
+  "projects": {
+    "D:\\ENOSIS WORKSPACE\\AdvancedTopics\\AdvancedTopics\\AdvancedTopics.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ENOSIS WORKSPACE\\AdvancedTopics\\AdvancedTopics\\AdvancedTopics.csproj",
+        "projectName": "AdvancedTopics",
+        "projectPath": "D:\\ENOSIS WORKSPACE\\AdvancedTopics\\AdvancedTopics\\AdvancedTopics.csproj",
+        "packagesPath": "C:\\Users\\ammar\\.nuget\\packages\\",
+        "outputPath": "D:\\ENOSIS WORKSPACE\\AdvancedTopics\\AdvancedTopics\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ammar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\ENOSIS WORKSPACE\\AdvancedTopics\\CustomModules\\CustomModules.csproj": {
+                "projectPath": "D:\\ENOSIS WORKSPACE\\AdvancedTopics\\CustomModules\\CustomModules.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\ENOSIS WORKSPACE\\AdvancedTopics\\CustomModules\\CustomModules.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ENOSIS WORKSPACE\\AdvancedTopics\\CustomModules\\CustomModules.csproj",
+        "projectName": "CustomModules",
+        "projectPath": "D:\\ENOSIS WORKSPACE\\AdvancedTopics\\CustomModules\\CustomModules.csproj",
+        "packagesPath": "C:\\Users\\ammar\\.nuget\\packages\\",
+        "outputPath": "D:\\ENOSIS WORKSPACE\\AdvancedTopics\\CustomModules\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ammar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

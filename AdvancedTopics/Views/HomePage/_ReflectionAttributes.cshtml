@@ -1,0 +1,77 @@
+﻿@model CustomModules.Models.DynamicModel
+
+@using System.ComponentModel;
+@using System.ComponentModel.DataAnnotations;
+@using System.Reflection;
+
+
+<div class="pb-3 content-area">
+    <h4> -- Employee Data Table -- </h4>
+    <table id="reflectionDataTable" class="table table-striped">
+        <thead>
+            <tr>
+                @{
+                    PropertyInfo[] propertyInfos = (Model.ModelType).GetProperties();
+
+                    foreach (var prop in propertyInfos)
+                    {
+                        var displayNameAttribute = prop.GetCustomAttributes(typeof(DisplayNameAttribute), false)
+                                                       .FirstOrDefault() as DisplayNameAttribute;
+                        var propertyName = displayNameAttribute != null ? displayNameAttribute.DisplayName : prop.Name;
+
+                        <td>@Html.Label(propertyName)</td>
+                    }
+
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                foreach (var item in Model.DataItems)
+                {
+                    propertyInfos = item.GetType().GetProperties();
+                    //propertyInfos.OrderBy(prop => prop.Name);
+                    <tr>
+                        @foreach (var prop in propertyInfos)
+                        {
+                            <td>@(prop.GetValue(item, null))</td>
+                        }
+                    </tr>
+                }
+
+                <tr id="inputSection" class="@(Model.IsValidData ? "hidden" : "") custom-border-top">
+
+                    @foreach (var prop in Model.NewData.GetType().GetProperties())
+                    {
+                        <td>
+                            <span>
+                                @Html.TextBox(prop.Name, prop.GetValue(Model.NewData, null))
+                            </span>
+                        </td>
+                    }
+
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="@(Model.IsValidData ? "hidden" : "") align-left pl-10 pb-5">
+        @Html.ValidationSummary(false, "Please fix the following error(s) and then submit the form.", new { @class = "text-danger" })
+    </div>
+
+    <div id="buttonSection">
+        <button type="button" id="addItem"> Add New Data </button>
+        <button type="button" id="submitNewItem" class="@(Model.IsValidData ? "hidden" : "")"> Submit Data </button>
+    </div>
+</div>
+
+
+<script>
+    var dataItems = @Html.Raw(Json.Serialize(Model.DataItems));
+    var isValidData = '@Model.IsValidData';
+    var modelType = '@Model.ModelType.AssemblyQualifiedName';
+    
+    //console.log("Reflection Model:", dataItems);
+    //console.log("isValidDatal:", isValidData);
+    //console.log("modelType:", modelType);
+</script>

@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\Athlete.cs" />
+    <Compile Remove="Models\DynamicModel.cs" />
+    <Compile Remove="Models\Employee.cs" />
+    <Compile Remove="Models\SubmittedModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\HomePage\Index.cshtml" />
+    <None Include="Views\HomePage\Privacy.cshtml" />
+    <None Include="Views\HomePage\_HomePageLayout.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CustomModules\CustomModules.csproj" />
+  </ItemGroup>
+
+</Project>

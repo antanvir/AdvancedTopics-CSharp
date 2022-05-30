@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Pzz3F8CpXDa9jcGX0wZ4BbsFRpx6Sx/SP0FByd9o5IRU/2Cm6+Nu/7yRRkivYYwgzAP7L9ikrBU/RJoK1eF3Ng==",
+  "success": true,
+  "projectFilePath": "D:\\ENOSIS WORKSPACE\\AdvancedTopics\\AdvancedTopics\\AdvancedTopics.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ammar\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

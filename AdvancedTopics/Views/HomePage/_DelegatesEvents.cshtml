@@ -1,0 +1,44 @@
+﻿@model CustomModules.Models.Athlete
+
+<div class="pb-3 content-area">
+    <form id="registrationForm" asp-controller="HomePage" asp-action="SaveAthlete" 
+        data-ajax="true" data-ajax-method="POST" data-ajax-cache="false"
+        data-ajax-complete="onAthleteRegistration">
+
+        <fieldset>
+            <legend>BKSP Athlete Registration</legend>
+                    
+            <div>
+                <label for="name">Name: </label>
+                @Html.TextBoxFor(m => Model.Name, new { @class = "disbaled", @name="name", @type="text", @size="20" }) 
+            </div>
+                    
+            <div>
+                <label for="height">Height(ft): </label>
+                @Html.TextBoxFor(m => Model.Height, new { @class = "disbaled", @name="height", @type="number", @min="0", @max="200", @step="0.1" }) 
+            </div>
+                    
+            <div>
+                <label for="weight">Weight(kg): </label>
+                @Html.TextBoxFor(m => Model.Weight, new { @class = "disbaled", @name="weight", @type="number", @min="0", @max="200", @step="0.5" }) 
+            </div>
+                    
+            <div>
+                <br>
+                <input type="button" id="btnSubmit" value="Submit" class="submit" /> <br><br>
+            </div>
+        </fieldset>
+
+    </form>
+
+    <div class="eligibility-section hidden">
+        <h4> Athlete eligible for (based on physiscal traits): </h4>
+
+        <input type="checkbox" name="indoor-games" value="1"> <label for="indoor-games"> Indoor Games </label><br>
+        <input type="checkbox" name="archery" value="1"> <label for="cricket"> Archery </label><br>
+        <input type="checkbox" name="cricket" value="1"> <label for="cricket"> Cricket </label><br>
+        <input type="checkbox" name="football" value="2"> <label for="football"> Football </label><br>
+        <input type="checkbox" name="basketball" value="3"> <label for="basketball"> Basketball </label><br><br>
+    </div>
+</div>
+
