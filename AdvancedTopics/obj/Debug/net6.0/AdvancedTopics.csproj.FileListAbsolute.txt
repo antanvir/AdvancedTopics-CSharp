@@ -9,7 +9,6 @@ D:\ENOSIS WORKSPACE\AdvancedTopics\AdvancedTopics\bin\Debug\net6.0\AdvancedTopic
 D:\ENOSIS WORKSPACE\AdvancedTopics\AdvancedTopics\bin\Debug\net6.0\AdvancedTopics.deps.json
 D:\ENOSIS WORKSPACE\AdvancedTopics\AdvancedTopics\bin\Debug\net6.0\AdvancedTopics.runtimeconfig.json
 D:\ENOSIS WORKSPACE\AdvancedTopics\AdvancedTopics\bin\Debug\net6.0\AdvancedTopics.dll
-D:\ENOSIS WORKSPACE\AdvancedTopics\AdvancedTopics\bin\Debug\net6.0\ref\AdvancedTopics.dll
 D:\ENOSIS WORKSPACE\AdvancedTopics\AdvancedTopics\bin\Debug\net6.0\AdvancedTopics.pdb
 D:\ENOSIS WORKSPACE\AdvancedTopics\AdvancedTopics\bin\Debug\net6.0\Newtonsoft.Json.dll
 D:\ENOSIS WORKSPACE\AdvancedTopics\AdvancedTopics\bin\Debug\net6.0\CustomModules.dll
@@ -33,3 +32,4 @@ D:\ENOSIS WORKSPACE\AdvancedTopics\AdvancedTopics\obj\Debug\net6.0\AdvancedTopic
 D:\ENOSIS WORKSPACE\AdvancedTopics\AdvancedTopics\obj\Debug\net6.0\ref\AdvancedTopics.dll
 D:\ENOSIS WORKSPACE\AdvancedTopics\AdvancedTopics\obj\Debug\net6.0\AdvancedTopics.pdb
 D:\ENOSIS WORKSPACE\AdvancedTopics\AdvancedTopics\obj\Debug\net6.0\AdvancedTopics.genruntimeconfig.cache
+D:\ENOSIS WORKSPACE\AdvancedTopics\AdvancedTopics\obj\Debug\net6.0\refint\AdvancedTopics.dll

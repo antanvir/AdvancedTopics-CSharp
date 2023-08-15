@@ -5,6 +5,7 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AdvancedTopics
 build_property.RootNamespace = AdvancedTopics
@@ -14,6 +15,10 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = D:\ENOSIS WORKSPACE\AdvancedTopics\AdvancedTopics
 build_property._RazorSourceGeneratorDebug = 
+
+[D:/ENOSIS WORKSPACE/AdvancedTopics/AdvancedTopics/Views/DesignPatterns/_DesignPatternView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzaWduUGF0dGVybnNcX0Rlc2lnblBhdHRlcm5WaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
 
 [D:/ENOSIS WORKSPACE/AdvancedTopics/AdvancedTopics/Views/HomePage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVBhZ2VcSW5kZXguY3NodG1s

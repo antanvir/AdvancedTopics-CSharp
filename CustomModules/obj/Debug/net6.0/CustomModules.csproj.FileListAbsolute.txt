@@ -5,7 +5,6 @@ D:\ENOSIS WORKSPACE\AdvancedTopics\CustomModules\bin\Debug\net6.0\CustomModules.
 D:\ENOSIS WORKSPACE\AdvancedTopics\CustomModules\bin\Debug\net6.0\CustomModules.deps.json
 D:\ENOSIS WORKSPACE\AdvancedTopics\CustomModules\bin\Debug\net6.0\CustomModules.runtimeconfig.json
 D:\ENOSIS WORKSPACE\AdvancedTopics\CustomModules\bin\Debug\net6.0\CustomModules.dll
-D:\ENOSIS WORKSPACE\AdvancedTopics\CustomModules\bin\Debug\net6.0\ref\CustomModules.dll
 D:\ENOSIS WORKSPACE\AdvancedTopics\CustomModules\bin\Debug\net6.0\CustomModules.pdb
 D:\ENOSIS WORKSPACE\AdvancedTopics\CustomModules\obj\Debug\net6.0\CustomModules.GeneratedMSBuildEditorConfig.editorconfig
 D:\ENOSIS WORKSPACE\AdvancedTopics\CustomModules\obj\Debug\net6.0\CustomModules.AssemblyInfoInputs.cache
@@ -24,3 +23,4 @@ D:\ENOSIS WORKSPACE\AdvancedTopics\CustomModules\obj\Debug\net6.0\ref\CustomModu
 D:\ENOSIS WORKSPACE\AdvancedTopics\CustomModules\obj\Debug\net6.0\CustomModules.pdb
 D:\ENOSIS WORKSPACE\AdvancedTopics\CustomModules\obj\Debug\net6.0\CustomModules.genruntimeconfig.cache
 D:\ENOSIS WORKSPACE\AdvancedTopics\CustomModules\obj\Debug\net6.0\CustomModules.csproj.AssemblyReference.cache
+D:\ENOSIS WORKSPACE\AdvancedTopics\CustomModules\obj\Debug\net6.0\refint\CustomModules.dll

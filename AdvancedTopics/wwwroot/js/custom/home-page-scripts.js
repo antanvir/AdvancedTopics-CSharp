@@ -9,12 +9,18 @@
     /* Reflection */
     $(document).on('click', '#addItem', showInputArea);
     $(document).on('click', '#submitNewItem', submitNewTableEntry);
+
+    /* Design Patterns */
+    /*selectDesignPatternsTab();*/
+    $(document).on('click', '#btnEnroll', enrollToGymnasium);
+    $(document).on('click', '#btnCart, #btnWishList, #btnUndo', updateCustomerCart);
 });
 
 // #region Common Section
 
 function populateAllTabsContent() {
     getReflectionTabContents();
+    getDesignPatternTabContents();
 }
 
 function changeTabContent() {
@@ -55,7 +61,7 @@ function handleDelegateFormSubmission() {
 }
 
 function submitDelegatesForm() {
-    var def = $.Deferred();
+    let def = $.Deferred();
 
     $(`input[type='checkbox']`).attr("checked", false);
     $(".eligibility-section").addClass("hidden");
@@ -143,5 +149,77 @@ function submitNewTableEntry() {
     });
 }
 
+// #endregion
+
+// #region Design Patterns
+
+function getDesignPatternTabContents() {
+    $.ajax({
+        url: 'DesignPattern/GetDesignPatternContents',
+        type: "GET",
+        cache: false,
+        success: function (partialView) {
+            $('#designPatternTab').html(partialView);
+            $('#designPatternTab').addClass('hidden');     /* Initially remains hidden */
+        },
+        error: function (err) {
+        }
+    });
+}
+
+function enrollToGymnasium() {
+    let subscriberName = $("#subscriberName").val();
+    let isLockerChecked = $("input[type='checkbox'][name='locker']").is(":checked");
+    let isSwimmingChecked = $("input[type='checkbox'][name='swimming-pool']").is(":checked");
+    let isTennisChecked = $("input[type='checkbox'][name='table-tennis']").is(":checked");
+
+    let def = $.Deferred();
+
+    const subscriber = {
+        Name: subscriberName,
+        IsLockerSubscribed: isLockerChecked,
+        IsSwimmingSubscribed: isSwimmingChecked,
+        IsTennisSubscribed: isTennisChecked
+    }
+
+    $.ajax({
+        url: 'DesignPattern/EnrolSubscriber',
+        type: "POST",
+        cache: false,
+        data: subscriber,
+        success: function (response) {
+            response = response.replaceAll('\r\n', '<br />');
+            $("#resultPrint").html(response);
+            def.resolve(response);
+        },
+        error: function (err) {
+            def.reject(err);
+        }
+    });
+    return def.promise();
+}
+
+function updateCustomerCart() {
+    let action = $(this).data('action');
+    let def = $.Deferred();
+
+    $.ajax({
+        url: 'DesignPattern/UpdateCustomerCart',
+        type: "POST",
+        cache: false,
+        data: {
+            ActionName: action
+        },
+        success: function (partialView) {
+            $("#designPatternTab").html(partialView);
+            def.resolve(partialView);
+        },
+        error: function (err) {
+            def.reject(err);
+        }
+    });
+    return def.promise();
+}
+    
 // #endregion
 
