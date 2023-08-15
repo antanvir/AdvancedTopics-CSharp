@@ -3,7 +3,7 @@
     margin: 0 auto;
 }
 
-label {
+#delegateTab label {
     display: inline-block;
     width: 100px;
     color: #777777;
@@ -67,6 +67,30 @@ input {
 
 .pb-5 {
     padding-bottom: 5px;
+}
+
+.mr-5 {
+    margin-right: 5px;
+}
+
+#designPatternTab .btn {
+    margin-right: 6px;
+    padding: 3px 5px;
+}
+
+.card-header {
+    margin-top: 0px !important;
+    background-color: darkseagreen;
+}
+
+.decorator-card-area #resultPrint {
+    text-align: justify;
+}
+
+.command-card-area .card-img-top {
+    width: 200px;
+    height: 300px;
+    margin: auto;
 }
 
 

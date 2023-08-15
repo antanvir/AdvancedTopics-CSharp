@@ -20,7 +20,12 @@
       "ProjectGuid": "919fd655-f067-4ba2-b932-d926e85dd6b4",
       "DisplayName": "Script Documents",
       "ColorIndex": 2
+    },
+    "16c0812b-9fe4-49bc-b9ca-b726124f038e": {
+      "ProjectGuid": "16c0812b-9fe4-49bc-b9ca-b726124f038e",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 4
 }

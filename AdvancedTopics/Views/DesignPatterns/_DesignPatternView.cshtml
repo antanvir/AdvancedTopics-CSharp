@@ -1,0 +1,61 @@
+﻿@using Newtonsoft.Json
+@model AdvancedTopics.Helpers.Command.Customer
+
+<div class="row">
+    <div class="col-sm-6 decorator-card-area">
+        <div class="card">
+            <h5 class="card-header">Decorator Pattern</h5>
+            <div class="card-body">
+                <div class="card-text">
+                    <h4> ANT Gymnasium Enrollment: </h4>
+                    
+                    <div>
+                        <label for="subscriber-name">Name: </label>
+                        @Html.TextBox("subscriber-name", "Tanvir", new { @id="subscriberName", @type="text", @size="30" })
+                    </div>
+                    
+                    <br />
+                    <div class="extra-perks-section">
+                        <h5> Other Facilities Subscribed For: </h5>
+                        <input type="checkbox" name="locker" value="1"> <label for="locker"> Locker Facility </label><br>
+                        <input type="checkbox" name="swimming-pool" value="1"> <label for="swimming-pool"> Swimming Pool </label><br>
+                        <input type="checkbox" name="table-tennis" value="1"> <label for="table-tennis"> Table Tennis </label><br>
+                    </div>
+                    
+                    <br />     
+                    <div id="resultPrint"> </div>
+                </div>
+                
+                <br />              
+                <a href="#" id="btnEnroll" class="btn btn-primary"><i class="fa fa-user-plus mr-5" aria-hidden="true"></i>Enroll</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 command-card-area">
+        <div class="card">
+            <h5 class="card-header">Command Pattern</h5>
+            <h4> Get the latest volume of the anime SpyXFamily! </h4>
+            <img src="~/images/spyXfamily.jpg" class="card-img-top" alt="SPYxFAMILY Anime Book Cover">
+            <div class="card-body">
+                <div class="card-text">
+                    <label for="cart-count">Cart count: </label>
+                    @Html.TextBox("cart-count", Model.ShopCart.CartItems, new { @id="cartCount",  @type="number", @readonly="true" })
+                    <br />
+
+                    <label for="wishList-count">Wish List count: </label>
+                    @Html.TextBox("wishList-count", Model.ShopCart.WishListItems, new { @id="wishListCount", @type="number", @readonly="true" })
+                </div>
+                <br />
+                <a href="#" id="btnCart" data-action="add-to-cart" class="btn btn-primary"><i class="fa fa-plus mr-5" aria-hidden="true"></i>Add To Cart</a>
+                <a href="#" id="btnWishList" data-action="add-to-wish-list" class="btn btn-primary"><i class="fa fa-plus mr-5" aria-hidden="true"></i>Add To Wish List</a>
+                <a href="#" id="btnUndo" data-action="undo" class="btn btn-primary"><i class="fa fa-undo mr-5" aria-hidden="true"></i>Undo</a>
+
+                @*@Html.Hidden("commands-stack", Model._commandStack)*@
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var commandsStack = @Html.Raw((JsonConvert.SerializeObject(Model.CommandStack)));
+</script>

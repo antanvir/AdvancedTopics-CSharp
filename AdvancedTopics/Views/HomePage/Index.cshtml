@@ -22,16 +22,23 @@
             <li class="nav-item" id="reflection">
                 <a class="nav-link" data-aria-current="2" href="#reflectionTab">Reflection</a>
             </li>
+            <li class="nav-item" id="designPattern">
+                <a class="nav-link" data-aria-current="3" href="#designPatternTab">Design Patterns</a>
+            </li>
         </ul>
     </div>
     <br/>
 
     <div class="tab-section">
         <div id="delegateTab" class="tab" data-tabid="1">
-            @Html.Partial("_DelegatesEvents.cshtml", Model)
+            @await Html.PartialAsync("_DelegatesEvents.cshtml", Model)
         </div>
 
         <div id="reflectionTab" class="tab hidden" data-tabid="2"></div>
+
+        <div id="designPatternTab" class="tab" data-tabid="3">
+            @*@await Html.PartialAsync("~/Views/DesignPatterns/_DesignPatternView.cshtml")*@
+        </div>
     </div>
 
 </div>  

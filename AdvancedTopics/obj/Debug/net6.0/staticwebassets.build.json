@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "x4Lfi9Tz5BZ6ozucda7Z5hK40CHli48hi6VVw3+ri4A=",
+  "Hash": "IP+P4wuc6yCzbBlXVFPC7/sAw0f8/rstrVs4whnXaVY=",
   "Source": "AdvancedTopics",
   "BasePath": "_content/AdvancedTopics",
   "Mode": "Default",
@@ -119,6 +119,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\ENOSIS WORKSPACE\\AdvancedTopics\\AdvancedTopics\\wwwroot\\images\\spyXfamily.jpg",
+      "SourceId": "AdvancedTopics",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ENOSIS WORKSPACE\\AdvancedTopics\\AdvancedTopics\\wwwroot\\",
+      "BasePath": "_content/AdvancedTopics",
+      "RelativePath": "images/spyXfamily.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\spyXfamily.jpg"
+    },
+    {
+      "Identity": "D:\\ENOSIS WORKSPACE\\AdvancedTopics\\AdvancedTopics\\wwwroot\\js\\custom\\design-pattern-scripts.js",
+      "SourceId": "AdvancedTopics",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ENOSIS WORKSPACE\\AdvancedTopics\\AdvancedTopics\\wwwroot\\",
+      "BasePath": "_content/AdvancedTopics",
+      "RelativePath": "js/custom/design-pattern-scripts.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\custom\\design-pattern-scripts.js"
     },
     {
       "Identity": "D:\\ENOSIS WORKSPACE\\AdvancedTopics\\AdvancedTopics\\wwwroot\\js\\custom\\home-page-scripts.js",
