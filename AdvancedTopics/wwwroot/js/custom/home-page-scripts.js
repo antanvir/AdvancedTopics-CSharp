@@ -2,6 +2,7 @@
     /* Common */
     populateAllTabsContent();
     $(document).on('click', 'ul li.nav-item a', changeTabContent);
+    $(document).on('click', 'ul li.nav-item a', () => alert("Ooops! Something went wrong!"));
 
     /* Delegates */
     $(document).on('click', '#btnSubmit', handleDelegateFormSubmission);
@@ -222,4 +223,3 @@ function updateCustomerCart() {
 }
     
 // #endregion
-
