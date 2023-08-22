@@ -37,6 +37,10 @@ CustomModules/obj/
 CustomModules/bin/
 AdvancedTopics/obj/
 AdvancedTopics/bin/
+CustomModules/obj/*
+CustomModules/bin/*
+AdvancedTopics/obj/*
+AdvancedTopics/bin/*
 
 
 # Visual Studio 2015/2017 cache/options directory
