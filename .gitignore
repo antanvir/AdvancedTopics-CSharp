@@ -42,6 +42,11 @@ CustomModules/bin/*
 AdvancedTopics/obj/*
 AdvancedTopics/bin/*
 
+CustomModules/obj/Debug/*
+CustomModules/bin/Debug/*
+AdvancedTopics/obj/Debug/*
+AdvancedTopics/bin/Debug/*
+
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
