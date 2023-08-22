@@ -15,7 +15,6 @@
     /*selectDesignPatternsTab();*/
     $(document).on('click', '#btnEnroll', enrollToGymnasium);
     $(document).on('click', '#btnCart, #btnWishList, #btnUndo', updateCustomerCart);
-
 });
 
 // #region Common Section
